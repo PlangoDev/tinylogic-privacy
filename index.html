@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tiny Logic privacy policy</title>
+<style>
+  :root { --bg: #15141f; --panel: #221f33; --ink: #ecebf5; --muted: #9693b0; --accent: #f5d33c; --green: #5fe08a; --line: #3a3654; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 18px 80px; }
+  h1 { color: var(--accent); font-size: 30px; margin: 0 0 4px; letter-spacing: 1px; }
+  h2 { color: var(--accent); font-size: 20px; margin: 36px 0 8px; }
+  p, li { color: var(--ink); }
+  .muted { color: var(--muted); }
+  .box { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 14px 18px; margin: 14px 0; }
+  .box h3 { margin: 0 0 6px; font-size: 16px; }
+  .yes h3 { color: var(--green); }
+  .no h3 { color: #e5484d; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  td, th { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--panel); }
+  a { color: var(--accent); }
+  code { background: var(--panel); padding: 1px 5px; border-radius: 3px; font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Tiny Logic privacy policy</h1>
+<p class="muted">Tiny Logic is a pixel circuit sandbox by Mazell Smack-Dubose. Last updated October 2026 (version 1.1.0).</p>
+
+<p><strong>The short version:</strong> Tiny Logic sends nothing about you unless you say yes. If you're too young for your
+region, it never asks and never sends anything. You can change your mind any time in <em>Settings</em>.</p>
+
+<h2>When the game asks</h2>
+<p>The first time you start Tiny Logic it asks your age. That answer stays on your computer. What counts as old enough
+depends on where your computer says you are (the language and region settings of your system; the game does not look
+you up on the internet):</p>
+<table>
+  <tr><th>Region</th><th>Old enough to choose</th></tr>
+  <tr><td>United States</td><td>13 or older</td></tr>
+  <tr><td>Everywhere else, or if the region is unknown</td><td>16 or older</td></tr>
+</table>
+<p>If you're younger than that, nothing is collected and nothing is sent: no stats, no crash reports. Everything else in
+the game works the same.</p>
+<p>If you're old enough, anonymous stats are <strong>off</strong> unless you choose <em>Share anonymous stats</em>. Choosing
+<em>No thanks</em> is just as fine, and the game works exactly the same either way.</p>
+
+<h2>What is sent if you say yes, and why</h2>
+<div class="box yes">
+  <h3>Sent (only after a yes)</h3>
+  <ul>
+    <li>A random install ID made on your computer. It isn't linked to your name, email or anything else about you.</li>
+    <li>Your system: operating system and version, CPU model and cores, memory, graphics card, screen and window size,
+      display count and refresh rate, UI scale, whether a touch screen is there, and (on Linux) X11 or Wayland.</li>
+    <li>The game version and language.</li>
+    <li>How the game is used: time spent in lessons, the sandbox, the chip studio and the assembly editor; lessons started,
+      steps reached, hints used, quiz answers right or wrong, lessons finished or left; kinds of parts placed; chips made;
+      programs loaded or assembled; projects created, opened and saved (counted, never named); settings changed;
+      share codes copied or pasted (counted); the length of what you type into the part picker's search, never the words.</li>
+    <li>How well it runs: frames a second, slow frames, simulation speed, compile times, memory use, and the size of the
+      board (counts of parts, wires and transistors).</li>
+    <li>Sessions: when a session starts and how long it lasts, days since you installed, time of day.</li>
+    <li>Your answers to the optional "get to know you" questions (age range, what you do, how you found the game, what you
+      want to build). Every question can be skipped.</li>
+    <li>Your itch.io name, only if you choose to link it.</li>
+  </ul>
+  <p>Why: to see what's fun, what's confusing and what's slow, so the right things get built and fixed next.</p>
+</div>
+<div class="box no">
+  <h3>Never sent</h3>
+  <ul>
+    <li>Your name, email or any account details (except an itch.io name you chose to link).</li>
+    <li>Your projects, circuits, chips or their names.</li>
+    <li>Anything you type: search words, project names, notes, programs.</li>
+    <li>File names or folders on your computer.</li>
+    <li>Your location. The stats service is told not to work out where you are from your internet address.</li>
+  </ul>
+</div>
+
+<h2>Crash reports</h2>
+<p>If Tiny Logic crashes, the next time it starts it asks (only if you're old enough): <em>Tiny Logic crashed last time.
+Send the crash report?</em> with <em>Yes</em>, <em>No</em> or <em>Always</em>. A crash report says what kind of crash it was,
+the game version, and where in the game's code it stopped (a "stack trace"). File paths in it are cut down to file names so
+your user name never goes along. Nothing about your projects is in it.</p>
+
+<h2>Where it goes</h2>
+<p>Stats and crash reports go to <a href="https://posthog.com">PostHog</a>, hosted in the United States
+(<code>us.i.posthog.com</code>). They're sent in small batches in the background; if you're offline they wait on your
+computer and go later. They're kept to improve the game and deleted when you ask.</p>
+
+<h2>Changing your mind</h2>
+<ul>
+  <li><em>Settings &gt; Stats &gt; off</em> stops all stats and crash reports at once. Anything still waiting on your computer
+    is deleted.</li>
+  <li><em>Settings &gt; Stats &gt; ask again</em> shows the first-start questions again (your age too).</li>
+  <li><em>Settings &gt; itch.io link &gt; off</em> stops sending your itch.io name.</li>
+</ul>
+
+<h2>Deleting your data</h2>
+<p>Email <a href="mailto:dubosemazell90@gmail.com">dubosemazell90@gmail.com</a> and ask. To find your data, include your
+install ID: it's the <code>installId</code> line in Tiny Logic's <code>settings.json</code>
+(macOS: <code>~/Library/Application Support/Mazell/TinyLogic/</code>,
+Windows: <code>%APPDATA%\Mazell\TinyLogic\</code>,
+Linux: <code>~/.local/share/Mazell/TinyLogic/</code>). If you can't find it, write anyway and say roughly when you played.</p>
+
+<h2>Discord status</h2>
+<p>If the Discord app is running on your computer, Tiny Logic can show what you're doing on your Discord profile (for
+example "Building in sandbox" and how many transistors your board has; never a project's name). The game only talks to
+the Discord app on your own computer, not to the internet. Whether it's shown, and to whom, is up to your Discord
+settings (<em>Activity Privacy</em>).</p>
+
+<h2>Update check</h2>
+<p>When it starts, Tiny Logic downloads one tiny file from this site (<code>version.txt</code>) to see if there's a newer
+version. Nothing about you is sent with it. Like any website, GitHub (which hosts this site) sees the internet address the
+request came from; see <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub's
+privacy statement</a>.</p>
+
+<h2>Contact</h2>
+<p>Questions about any of this: <a href="mailto:dubosemazell90@gmail.com">dubosemazell90@gmail.com</a>.</p>
+</main>
+</body>
+</html>
