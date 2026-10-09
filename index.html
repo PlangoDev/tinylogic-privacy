@@ -3,121 +3,161 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tiny Logic privacy policy</title>
+<title>Tiny Logic Privacy Policy</title>
 <style>
   :root { --bg: #15141f; --panel: #221f33; --ink: #ecebf5; --muted: #9693b0; --accent: #f5d33c; --green: #5fe08a; --line: #3a3654; }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 40px 18px 80px; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 40px 18px 80px; }
   h1 { color: var(--accent); font-size: 30px; margin: 0 0 4px; letter-spacing: 1px; }
-  h2 { color: var(--accent); font-size: 20px; margin: 36px 0 8px; }
-  p, li { color: var(--ink); }
+  h2 { color: var(--accent); font-size: 20px; margin: 40px 0 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+  h3 { font-size: 16px; margin: 20px 0 6px; }
   .muted { color: var(--muted); }
   .box { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 14px 18px; margin: 14px 0; }
-  .box h3 { margin: 0 0 6px; font-size: 16px; }
-  .yes h3 { color: var(--green); }
-  .no h3 { color: #e5484d; }
-  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 15px; }
   td, th { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
   th { background: var(--panel); }
   a { color: var(--accent); }
-  code { background: var(--panel); padding: 1px 5px; border-radius: 3px; font-size: 15px; }
+  code { background: var(--panel); padding: 1px 5px; border-radius: 3px; font-size: 14px; }
+  nav ol { columns: 2; font-size: 15px; }
+  @media (max-width: 600px) { nav ol { columns: 1; } }
 </style>
 </head>
 <body>
 <main>
-<h1>Tiny Logic privacy policy</h1>
-<p class="muted">Tiny Logic is a pixel circuit sandbox by Mazell Smack-Dubose. Last updated October 2026 (version 1.1.0).</p>
+<h1>Tiny Logic Privacy Policy</h1>
+<p class="muted">Effective date: 8 October 2026 · Applies to Tiny Logic version 1.1.1 and later, the Tiny Logic Discord server and its bot, and this website.</p>
 
-<p><strong>The short version:</strong> Tiny Logic sends nothing about you unless you say yes. If you're too young for your
-region, it never asks and never sends anything. You can change your mind any time in <em>Settings</em>.</p>
+<div class="box">
+<p><strong>Summary.</strong> Tiny Logic collects no personal data unless you give consent in the game. If you are below the age of digital consent for your region, nothing is collected. You may withdraw consent at any time in <em>Settings</em>, and you may ask for your data to be deleted. We do not sell or share personal data for advertising. This summary is for convenience only; the full policy below governs.</p>
+</div>
 
-<h2>When the game asks</h2>
-<p>The first time you start Tiny Logic it asks your age. That answer stays on your computer. What counts as old enough
-depends on where your computer says you are (the language and region settings of your system; the game does not look
-you up on the internet):</p>
+<nav><ol>
+<li><a href="#who">Who we are</a></li>
+<li><a href="#scope">Scope</a></li>
+<li><a href="#children">Children and age of consent</a></li>
+<li><a href="#collect">Data we collect</a></li>
+<li><a href="#never">Data we do not collect</a></li>
+<li><a href="#basis">Purposes and legal bases</a></li>
+<li><a href="#processors">Service providers and recipients</a></li>
+<li><a href="#transfers">International transfers</a></li>
+<li><a href="#retention">Retention</a></li>
+<li><a href="#rights-eu">Your rights (EU, EEA and UK)</a></li>
+<li><a href="#rights-us">Your rights (United States)</a></li>
+<li><a href="#exercise">How to exercise your rights</a></li>
+<li><a href="#discord">Discord server, bot and Rich Presence</a></li>
+<li><a href="#purchases">Purchases</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#automated">Automated decision-making</a></li>
+<li><a href="#changes">Changes to this policy</a></li>
+<li><a href="#contact">Contact and complaints</a></li>
+</ol></nav>
+
+<h2 id="who">1. Who we are</h2>
+<p>Tiny Logic is developed and published by <strong>Mazell Smack-Dubose</strong>, an individual developer based in Delaware, United States ("we", "us", "our"). For the purposes of the EU General Data Protection Regulation (Regulation (EU) 2016/679, "GDPR") and the UK GDPR together with the UK Data Protection Act 2018, we are the <strong>controller</strong> of the personal data described in this policy. We have not appointed a data protection officer, as we are not required to do so. Contact details are in <a href="#contact">section 18</a>.</p>
+
+<h2 id="scope">2. Scope</h2>
+<p>This policy covers: (a) the Tiny Logic game and its free demo on all platforms ("the Game"); (b) the Tiny Logic Discord server at discord.gg/tinylogic and its bot ("the Community"); and (c) this website. It does not cover third-party services you use to obtain or play the Game (such as itch.io, Steam or Discord), which are governed by their own privacy policies.</p>
+
+<h2 id="children">3. Children and age of consent</h2>
+<p>On first launch the Game asks whether you are old enough to consent to optional data collection. The age that applies is determined from your device's language and region settings, not from any location lookup:</p>
 <table>
-  <tr><th>Region</th><th>Old enough to choose</th></tr>
-  <tr><td>United States</td><td>13 or older</td></tr>
-  <tr><td>Everywhere else, or if the region is unknown</td><td>16 or older</td></tr>
+  <tr><th>Region</th><th>Minimum age to consent</th></tr>
+  <tr><td>United States</td><td>13 (Children's Online Privacy Protection Act)</td></tr>
+  <tr><td>United Kingdom, European Union, European Economic Area, and all other or unknown regions</td><td>16 (GDPR Article 8 and the UK Age Appropriate Design Code; we apply the highest age used by any EU member state)</td></tr>
 </table>
-<p>If you're younger than that, nothing is collected and nothing is sent: no stats, no crash reports. Everything else in
-the game works the same.</p>
-<p>If you're old enough, anonymous stats are <strong>off</strong> unless you choose <em>Share anonymous stats</em>. Choosing
-<em>No thanks</em> is just as fine, and the game works exactly the same either way.</p>
+<p>Your answer is stored only on your device. If you indicate that you are below the applicable age, the Game does not request consent and <strong>collects and transmits no analytics or crash data</strong>; all gameplay features remain available. We do not knowingly collect personal data from children below these ages. If you believe a child has provided personal data to us, contact us and we will delete it promptly. The Community is subject to Discord's Terms of Service, which require users to be at least 13 (or older where local law requires).</p>
 
-<h2>What is sent if you say yes, and why</h2>
-<div class="box yes">
-  <h3>Sent (only after a yes)</h3>
-  <ul>
-    <li>A random install ID made on your computer. It isn't linked to your name, email or anything else about you.</li>
-    <li>Your system: operating system and version, CPU model and cores, memory, graphics card, screen and window size,
-      display count and refresh rate, UI scale, whether a touch screen is there, and (on Linux) X11 or Wayland.</li>
-    <li>The game version and language.</li>
-    <li>How the game is used: time spent in lessons, the sandbox, the chip studio and the assembly editor; lessons started,
-      steps reached, hints used, quiz answers right or wrong, lessons finished or left; kinds of parts placed; chips made;
-      programs loaded or assembled; projects created, opened and saved (counted, never named); settings changed;
-      share codes copied or pasted (counted); the length of what you type into the part picker's search, never the words.</li>
-    <li>How well it runs: frames a second, slow frames, simulation speed, compile times, memory use, and the size of the
-      board (counts of parts, wires and transistors).</li>
-    <li>Sessions: when a session starts and how long it lasts, days since you installed, time of day.</li>
-    <li>Your answers to the optional "get to know you" questions (age range, what you do, how you found the game, what you
-      want to build). Every question can be skipped.</li>
-    <li>Your itch.io name, only if you choose to link it.</li>
-  </ul>
-  <p>Why: to see what's fun, what's confusing and what's slow, so the right things get built and fixed next.</p>
-</div>
-<div class="box no">
-  <h3>Never sent</h3>
-  <ul>
-    <li>Your name, email or any account details (except an itch.io name you chose to link).</li>
-    <li>Your projects, circuits, chips or their names.</li>
-    <li>Anything you type: search words, project names, notes, programs.</li>
-    <li>File names or folders on your computer.</li>
-    <li>Your location. The stats service is told not to work out where you are from your internet address.</li>
-  </ul>
-</div>
+<h2 id="collect">4. Data we collect</h2>
+<h3>4.1 Game analytics (only with your consent)</h3>
+<p>If you are old enough and select <em>Share anonymous stats</em>, the Game sends the following, linked to a random installation identifier generated on your device:</p>
+<table>
+  <tr><th>Category</th><th>Examples</th></tr>
+  <tr><td>Device and technical data</td><td>Operating system and version, CPU model and core count, memory, graphics hardware, screen and window size, display count and refresh rate, UI scale, presence of touch input, Linux display server, game version and language.</td></tr>
+  <tr><td>Usage data</td><td>Session start, length and time of day; days since installation; time spent in game modes; lessons started, steps reached, hints used, quiz answers (correct or incorrect), lessons completed or exited; types of parts placed and how they were found; chips made; programs loaded or assembled; projects created, opened and saved (counts only); settings changed; features first used; update notices opened.</td></tr>
+  <tr><td>Performance data</td><td>Frame rate, slow frames, simulation speed, compile times, memory use, and the size of the current board (counts of parts, wires and transistors).</td></tr>
+  <tr><td>Optional questionnaire</td><td>Age range, occupation or field of study, how you found the Game, and what you want to build. Every question may be skipped.</td></tr>
+  <tr><td>Linked account (optional)</td><td>Your itch.io username, only if you separately choose to link it.</td></tr>
+  <tr><td>Network data</td><td>Like any internet service, our analytics provider receives the IP address from which data is sent. We instruct it not to derive location from that address, and we do not use IP addresses to identify you.</td></tr>
+</table>
+<h3>4.2 Crash reports (only with your consent)</h3>
+<p>After a crash, and only if you are old enough, the Game asks whether to send a crash report. A report contains the type of error, the game version, the operating system, and a technical trace of where the Game's code stopped. File paths are reduced to file names so that your system user name is not included. Reports never include your projects or anything you typed.</p>
+<h3>4.3 Update check (no personal data)</h3>
+<p>On start-up the Game requests a small file (<code>version.txt</code>) from this website to check for updates. No identifier or personal data is sent. Our host, GitHub, necessarily receives your IP address as part of serving the file; see <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
+<h3>4.4 Community data</h3>
+<p>See <a href="#discord">section 13</a>.</p>
+<h3>4.5 Communications</h3>
+<p>If you contact us by email, Discord or social media, we process the content of your message and your contact details in order to respond.</p>
 
-<h2>Crash reports</h2>
-<p>If Tiny Logic crashes, the next time it starts it asks (only if you're old enough): <em>Tiny Logic crashed last time.
-Send the crash report?</em> with <em>Yes</em>, <em>No</em> or <em>Always</em>. A crash report says what kind of crash it was,
-the game version, and where in the game's code it stopped (a "stack trace"). File paths in it are cut down to file names so
-your user name never goes along. Nothing about your projects is in it.</p>
+<h2 id="never">5. Data we do not collect</h2>
+<p>We do not collect: your real name, email address or payment details through the Game; the contents or names of your projects, circuits, chips or programs; anything you type, including search terms, notes and code; file or folder names on your device; your precise or approximate location; contacts, camera, microphone or files outside the Game. We do not use advertising identifiers, do not show advertising, and do not build advertising profiles.</p>
 
-<h2>Where it goes</h2>
-<p>Stats and crash reports go to <a href="https://posthog.com">PostHog</a>, hosted in the United States
-(<code>us.i.posthog.com</code>). They're sent in small batches in the background; if you're offline they wait on your
-computer and go later. They're kept to improve the game and deleted when you ask.</p>
+<h2 id="basis">6. Purposes and legal bases</h2>
+<table>
+  <tr><th>Purpose</th><th>Data</th><th>Legal basis (GDPR / UK GDPR)</th></tr>
+  <tr><td>Understanding how the Game is used, which lessons are difficult, and what to improve</td><td>Analytics, questionnaire</td><td>Your consent (Art. 6(1)(a))</td></tr>
+  <tr><td>Finding and fixing crashes and performance problems</td><td>Crash reports, performance data</td><td>Your consent (Art. 6(1)(a))</td></tr>
+  <tr><td>Telling you an update is available</td><td>None (IP address received by host only)</td><td>Our legitimate interest in keeping players on a working, secure version (Art. 6(1)(f))</td></tr>
+  <tr><td>Running and moderating the Community, verifying purchases for roles</td><td>Discord data, download keys</td><td>Legitimate interest in a safe, functioning community (Art. 6(1)(f)); performance of the service you request (Art. 6(1)(b))</td></tr>
+  <tr><td>Responding to messages and requests</td><td>Communications</td><td>Legitimate interest (Art. 6(1)(f)); legal obligation where a request concerns your rights (Art. 6(1)(c))</td></tr>
+</table>
+<p>Where we rely on consent, you may withdraw it at any time, without affecting the lawfulness of processing before withdrawal. Withdrawal never reduces what you can do in the Game. Where we rely on legitimate interests, you may object (see <a href="#rights-eu">section 10</a>).</p>
 
-<h2>Changing your mind</h2>
+<h2 id="processors">7. Service providers and recipients</h2>
+<p>We do not sell personal data and do not disclose it to third parties for their own purposes. We use the following providers, who process data on our behalf under their terms and data processing agreements:</p>
+<table>
+  <tr><th>Provider</th><th>Purpose</th><th>Location</th></tr>
+  <tr><td>PostHog Inc.</td><td>Analytics and crash report storage</td><td>United States</td></tr>
+  <tr><td>Google LLC (Google Cloud)</td><td>Hosting the Community bot, and automated content moderation of Community messages</td><td>United States</td></tr>
+  <tr><td>GitHub, Inc.</td><td>Hosting this website and the update file</td><td>United States</td></tr>
+  <tr><td>Discord Inc.</td><td>Operating the Community (as an independent controller under its own policy)</td><td>United States</td></tr>
+  <tr><td>itch.io (Leafo Games LLC)</td><td>Sale and delivery of the Game, and purchase verification (as an independent controller under its own policy)</td><td>United States</td></tr>
+</table>
+<p>We may disclose personal data where required by law, to respond to valid legal process, or to protect the rights, safety or property of players, the public or us.</p>
+
+<h2 id="transfers">8. International transfers</h2>
+<p>We and our providers are located in the United States. If you are in the EU, EEA or UK, your personal data is transferred to the United States. Such transfers rely on the EU-U.S. Data Privacy Framework and its UK Extension where the recipient is certified, and otherwise on the European Commission's Standard Contractual Clauses (and the UK International Data Transfer Addendum) incorporated in the providers' data processing terms, together with appropriate supplementary measures.</p>
+
+<h2 id="retention">9. Retention</h2>
 <ul>
-  <li><em>Settings &gt; Stats &gt; off</em> stops all stats and crash reports at once. Anything still waiting on your computer
-    is deleted.</li>
-  <li><em>Settings &gt; Stats &gt; ask again</em> shows the first-start questions again (your age too).</li>
-  <li><em>Settings &gt; itch.io link &gt; off</em> stops sending your itch.io name.</li>
+  <li><strong>Analytics and crash reports:</strong> kept for no longer than 24 months from collection, then deleted or fully anonymised, unless you ask us to delete them sooner.</li>
+  <li><strong>Data waiting on your device:</strong> deleted from your device as soon as it is sent, or immediately if you turn stats off.</li>
+  <li><strong>Community moderation records:</strong> kept for up to 12 months, or longer only where needed to handle an ongoing safety issue.</li>
+  <li><strong>Purchase verification records:</strong> kept while the associated role exists, to prevent the same key being used twice.</li>
+  <li><strong>Correspondence:</strong> kept for as long as needed to deal with your message, and no longer than 24 months afterwards.</li>
 </ul>
 
-<h2>Deleting your data</h2>
-<p>Email <a href="mailto:dubosemazell90@gmail.com">dubosemazell90@gmail.com</a> and ask. To find your data, include your
-install ID: it's the <code>installId</code> line in Tiny Logic's <code>settings.json</code>
-(macOS: <code>~/Library/Application Support/Mazell/TinyLogic/</code>,
-Windows: <code>%APPDATA%\Mazell\TinyLogic\</code>,
-Linux: <code>~/.local/share/Mazell/TinyLogic/</code>). If you can't find it, write anyway and say roughly when you played.</p>
+<h2 id="rights-eu">10. Your rights (EU, EEA and UK)</h2>
+<p>Under the GDPR and UK GDPR you have the right to: <strong>access</strong> your personal data (Art. 15); <strong>rectification</strong> (Art. 16); <strong>erasure</strong> (Art. 17); <strong>restriction</strong> of processing (Art. 18); <strong>data portability</strong> (Art. 20); <strong>object</strong> to processing based on legitimate interests (Art. 21); and <strong>withdraw consent</strong> at any time (Art. 7(3)). You also have the right to lodge a complaint with a supervisory authority, in particular in the member state of your habitual residence, place of work or place of the alleged infringement, or in the UK with the Information Commissioner's Office (ico.org.uk).</p>
 
-<h2>Discord status</h2>
-<p>If the Discord app is running on your computer, Tiny Logic can show what you're doing on your Discord profile (for
-example "Building in sandbox" and how many transistors your board has; never a project's name). The game only talks to
-the Discord app on your own computer, not to the internet. Whether it's shown, and to whom, is up to your Discord
-settings (<em>Activity Privacy</em>).</p>
+<h2 id="rights-us">11. Your rights (United States)</h2>
+<p><strong>California.</strong> Under the California Consumer Privacy Act as amended by the California Privacy Rights Act (CCPA/CPRA), California residents may request to know the categories and specific pieces of personal information we collected, the sources, purposes and recipients; to delete it; and to correct inaccurate information. The categories we collect, only with consent, are identifiers (a random installation ID and, if linked, an itch.io username; IP address as received), internet or other electronic network activity (usage and performance data), and inferences we do not draw for profiling. <strong>We do not sell or "share" personal information</strong> (as those terms are defined in the CCPA/CPRA), do not use or disclose sensitive personal information, and have not done so in the preceding 12 months. We will not discriminate against you for exercising any right.</p>
+<p><strong>Other states.</strong> Residents of states with comprehensive privacy laws (including Colorado, Connecticut, Delaware, Oregon, Texas, Utah and Virginia) may have rights to access, correct, delete and obtain a copy of their personal data, and to opt out of targeted advertising, sale and profiling. We do not engage in targeted advertising, sale or profiling. You may appeal any decision on your request by replying to our response; if your appeal is denied, you may contact your state Attorney General.</p>
+<p><strong>Do Not Track and Global Privacy Control.</strong> Because the Game collects nothing without opt-in consent, no additional opt-out is required. We honour any request to stop processing however it is made.</p>
 
-<h2>Update check</h2>
-<p>When it starts, Tiny Logic downloads one tiny file from this site (<code>version.txt</code>) to see if there's a newer
-version. Nothing about you is sent with it. Like any website, GitHub (which hosts this site) sees the internet address the
-request came from; see <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub's
-privacy statement</a>.</p>
+<h2 id="exercise">12. How to exercise your rights</h2>
+<p>The fastest way is in the Game: <em>Settings &gt; Stats &gt; off</em> stops all analytics and crash reports immediately and deletes anything still waiting on your device; <em>Settings &gt; itch.io link &gt; off</em> stops sending your username. For access, deletion, correction or portability, email <a href="mailto:dubosemazell90@gmail.com">dubosemazell90@gmail.com</a>. To locate your data, include your installation ID, found as <code>installId</code> in Tiny Logic's <code>settings.json</code> (macOS: <code>~/Library/Application Support/Mazell/TinyLogic/</code>; Windows: <code>%APPDATA%\Mazell\TinyLogic\</code>; Linux: <code>~/.local/share/Mazell/TinyLogic/</code>). If you cannot find it, write anyway and tell us roughly when you played. We will respond within one month (GDPR / UK GDPR) or 45 days (US state laws), extendable where the law allows, and may need to verify your request. You may use an authorised agent where the law permits.</p>
 
-<h2>Contact</h2>
-<p>Questions about any of this: <a href="mailto:dubosemazell90@gmail.com">dubosemazell90@gmail.com</a>.</p>
+<h2 id="discord">13. Discord server, bot and Rich Presence</h2>
+<p><strong>Rich Presence.</strong> If the Discord desktop application is running, the Game may display your current activity on your Discord profile (for example "Building in sandbox" and a transistor count; never a project's name). The Game communicates only with the Discord application on your own device. Whether this is visible, and to whom, is controlled by your Discord <em>Activity Privacy</em> settings.</p>
+<p><strong>Community and bot.</strong> In the Community, our bot processes: your Discord user ID, username and server roles; the content of messages you post, for automated moderation (detecting hate speech, harassment and spam, which may be analysed by Google Cloud's content moderation service) and for activity levels; bug reports, ideas, builds, votes and attachments you submit through its commands; and an itch.io download key you choose to submit with <code>/verify</code>, which is checked with itch.io solely to confirm your purchase and grant a role. Moderation actions and their reasons are logged for our moderators. We may review aggregated, de-identified Community activity to improve the Game. Message content is not sold, shared for advertising, or used to train AI models.</p>
+
+<h2 id="purchases">14. Purchases</h2>
+<p>Purchases are processed by itch.io (and, in future, Steam), which act as independent controllers of your payment and account information. We receive from itch.io limited purchase records (such as the purchase date, amount, country, and the name and email address you provided to itch.io) in order to fulfil orders, provide Steam keys to existing buyers, process refunds and comply with tax and accounting obligations. We never receive your full payment card details.</p>
+
+<h2 id="security">15. Security</h2>
+<p>Data is transmitted over encrypted connections (HTTPS/TLS). Access to analytics, moderation logs and purchase records is restricted to the developer. No system is completely secure; if a personal data breach occurs that is likely to result in a risk to your rights, we will notify the relevant supervisory authority within 72 hours where required and inform affected users without undue delay.</p>
+
+<h2 id="automated">16. Automated decision-making</h2>
+<p>We do not make decisions that produce legal or similarly significant effects based solely on automated processing. Automated moderation in the Community may remove a message or apply a temporary timeout; you may ask a human moderator to review any such action.</p>
+
+<h2 id="changes">17. Changes to this policy</h2>
+<p>We may update this policy, for example when the Game gains new features. The effective date above will change, and material changes will be announced in the Game's update notes and the Community. Where a change requires new consent, the Game will ask again before collecting any new data.</p>
+
+<h2 id="contact">18. Contact and complaints</h2>
+<p>Mazell Smack-Dubose (Tiny Logic), Delaware, United States<br>
+Email: <a href="mailto:dubosemazell90@gmail.com">dubosemazell90@gmail.com</a></p>
+<p>If you are unhappy with how we handle your data, please contact us first so we can try to resolve it. You also have the right to complain to your data protection authority, as described in <a href="#rights-eu">section 10</a>.</p>
 </main>
 </body>
 </html>
